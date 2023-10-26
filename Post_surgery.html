@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<!-- Website - www.codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Slider HTML CSS JavaScript | codingNepal</title>
+
+
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="random project/css/swiper-bundle.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="random project/css/style.css" />
+  </head>
+  <body>
+
+    <div id="header">
+      <div class="container">
+
+  <!--Navigation-->
+
+<header class="row ">
+    <nav>
+        <div class="wrapper">
+          <div class="logo"><a href="index.html"><span>H</span>igh <span>T</span>ech <span>M</span>edical <span>S</span>upplies</a></div>
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
+          <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li>
+              <a href="#service" class="desktop-item">Services</a>
+              <input type="checkbox" id="showDrop">
+              <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+              
+            </li>
+            <li>
+              <a href="random_project.html" class="desktop-item">All Products</a>
+              <input type="checkbox" id="showMega">
+              <label for="showMega" class="mobile-item">Mega Menu</label>
+              <div class="mega-box">
+                <div class="content">
+                  
+                  <div class="mega-row">
+                    <header>Mobility</header>
+                    <ul class="mega-links">
+                      <li><a href="Mobility_Products.html">Wheelchairs</a></li>
+                      <li><a href="Mobility_Products.html">Knee Scooters</a></li>
+                      <li><a href="Mobility_Products.html">Walkers</a></li>
+                      <li><a href="Mobility_Products.html">Transport Chairs</a></li>
+                      <li><a href="Mobility_Products.html">Rollator</a></li>
+                      <li><a href="Mobility_Products.html">Crutches</a></li>
+                      <li><a href="Mobility_Products.html">Canes</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-row">
+                    <header>Bathroom Safety</header>
+                    <ul class="mega-links">
+                      <li><a href="Bathroom_Safety.html">Shower Chairs</a></li>
+                      <li><a href="Bathroom_Safety.html">Tub Transfer Bench</a></li>
+                      <li><a href="Bathroom_Safety.html">Raised Toilet Seat</a></li>
+                      <li><a href="Bathroom_Safety.html">Toilet Safety Rails</a></li>
+                      <li><a href="Bathroom_Safety.html">Handheld Shower</a></li>
+                     
+                    </ul>
+                  </div>
+                  <div class="mega-row">
+                    <header>Post Surgery</header>
+                    <ul class="mega-links">
+                      <li><a href="Post_surgery.html">Cold Therapies and Compression Unit</a></li>
+                      <li><a href="Post_surgery.html">Vascutherm</a></li>
+                      <li><a href="Post_surgery.html">NICE Unit</a></li>
+                      <li><a href="Post_surgery.html">Cold Therapy Units</a></li>
+                      <li><a href="Post_surgery.html">SCD machine for lymphedema compression</a></li>
+                      <li><a href="Post_surgery.html">Lift Chairs</a></li>
+                      <li><a href="Post_surgery.html">Donjoy Ice Man</a></li>
+
+                    </ul>
+                  </div>
+                  <div class="mega-row">
+                    <header>Orthotics</header>
+                    <ul class="mega-links">
+                      <li><a href="Orthotic.html">Knee brace</a></li>
+                      <li><a href="Orthotic.html">Post Opperation Knee Bracing</a></li>
+                      <li><a href="Orthotic.html">Lumbar back brace</a></li>
+                      <li><a href="Orthotic.html">Wrist bracing</a></li>
+                      <li><a href="Orthotic.html">Knee brace</a></li>
+                      <li><a href="Orthotic.html">Elbow bracing</a></li>
+                      <li><a href="Orthotic.html">CAM Boot</a></li>
+                      <li><a href="Orthotic.html">Shoulder Bracing-Ultra Slim</a></li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <div>
+                <a href="#Appointment" class="page-btn active toggleContact" onclick="toggleConact();">Contact Us</a>
+    
+            </div>
+          </ul>
+          <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+        </div>
+      </nav>
+</header>
+<!--End-Navigation-->
+
+  <!--End Mobility Products-->
+<section class = "main-wrapper">
+    <div class = "container">
+        <div class = "main-title">
+            <h1>Our Post Surgery Products.</h1>
+        </div>
+        <div class = "display-style-btns">
+            <button type = "button" id = "grid-active-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-grid" viewBox="0 0 16 16">
+                <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+              </svg>
+            </button>
+            <button type = "button" id = "details-active-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-layout-text-sidebar-reverse" viewBox="0 0 16 16">
+                <path d="M12.5 3a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1h5zm0 3a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1h5zm.5 3.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5zm-.5 2.5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1h5z"/>
+                <path d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2zM4 1v14H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h2zm1 0h9a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5V1z"/>
+              </svg>
+            </button>
+        </div>
+  
+        <div class = "item-list">
+            <div class = "item">
+                <div class = "item-img">
+                    <img src = "images/Kodiak-cold-therapy-withpad_2.png">
+                    <div class = "icon-list">
+                        <a href="index.html#Appointment">
+                            </a>
+                    </div>
+                </div>
+                <div class = "item-detail">
+                    <a href = "index.html#Appointment" class = "item-name">Cold Therapies and Compression Unit</a>
+                    <div class = "item-price">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore fugiat quod corporis delectus sequi laudantium molestias vero distinctio, qui numquam dolore, corrupti, enim consectetur cum?</p>
+
+                    </div>
+                    <a href="index.html#Appointment">
+                        <a href="index.html#Appointment" class="contactbtn toggleContact" onclick="toggleConact();">Contact Us</a>
+                    </a>
+                </div>
+            </div>
+  
+            <div class = "item">
+                <div class = "item-img">
+                    <img src = "images/915VascuTherm4.png">
+                    <div class = "icon-list">
+                        <a href="index.html#Appointment">
+                            </a>
+                    </div>
+                </div>
+                <div class = "item-detail">
+                    <a href = "index.html#Appointment" class = "item-name">Vascutherm</a>
+                    <div class = "item-price">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore fugiat quod corporis delectus sequi laudantium molestias vero distinctio, qui numquam dolore, corrupti, enim consectetur cum?</p>
+
+                    </div>
+                    <a href="index.html#Appointment">
+                        <a href="index.html#Appointment" class="contactbtn toggleContact" onclick="toggleConact();">Contact Us</a>
+                        </a>
+                </div>
+            </div>
+  
+            <div class = "item">
+                <div class = "item-img">
+                    <img src = "images/pmct-nice1-wrist-s.png">
+                    <div class = "icon-list">
+                        <a href="index.html#Appointment">
+                            </a>
+                    </div>
+                </div>
+                <div class = "item-detail">
+                    <a href = "index.html#Appointment" class = "item-name">NICE Unit</a>
+                    <div class = "item-price">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore fugiat quod corporis delectus sequi laudantium molestias vero distinctio, qui numquam dolore, corrupti, enim consectetur cum?</p>
+
+                    </div>
+                    <a href="index.html#Appointment">
+                        <a href="index.html#Appointment" class="contactbtn toggleContact" onclick="toggleConact();">Contact Us</a>
+                        </a>
+                </div>
+            </div>
+  
+            <div class = "item">
+                <div class = "item-img">
+                    <img src = "images/bb3b42a42044b7ebe1ac26c09a1be1e6.png">
+                    <div class = "icon-list">
+                        <a href="index.html#Appointment">
+                            </a>
+                    </div>
+                </div>
+                <div class = "item-detail">
+                    <a href = "index.html#Appointment" class = "item-name">Cold Therapy Units</a>
+                    <div class = "item-price">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore fugiat quod corporis delectus sequi laudantium molestias vero distinctio, qui numquam dolore, corrupti, enim consectetur cum?</p>
+
+                    </div>
+                    <a href="index.html#Appointment">
+                        <a href="index.html#Appointment" class="contactbtn toggleContact" onclick="toggleConact();">Contact Us</a>
+                        </a>
+                </div>
+            </div>
+  
+            <div class = "item">
+                <div class = "item-img">
+                    <img src = "images/61xqoM-SwCL.png">
+                    <div class = "icon-list">
+                        <a href="index.html#Appointment">
+                            </a>
+                    </div>
+                </div>
+                <div class = "item-detail">
+                    <a href = "index.html#Appointment" class = "item-name">SCD machine for lymphedema compression</a>
+                    <div class = "item-price">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore fugiat quod corporis delectus sequi laudantium molestias vero distinctio, qui numquam dolore, corrupti, enim consectetur cum?</p>
+
+                    </div>
+                    <a href="index.html#Appointment">
+                        <a href="index.html#Appointment" class="contactbtn toggleContact" onclick="toggleConact();">Contact Us</a>
+                        </a>
+                </div>
+            </div>
+  
+            
+  
+            
+            
+  
+            <div class = "item">
+                <div class = "item-img">
+                    <img src = "images/lc358m_cloud_9-stone_lifted_6.png">
+                    <div class = "icon-list">
+                        <a href="index.html#Appointment">
+                            </a>
+                    </div>
+                </div>
+                <div class = "item-detail">
+                    <a href = "index.html#Appointment" class = "item-name">Lift Chairs</a>
+                    <div class = "item-price">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore fugiat quod corporis delectus sequi laudantium molestias vero distinctio, qui numquam dolore, corrupti, enim consectetur cum?</p>
+
+                    </div>
+                    <a href="index.html#Appointment">
+                        <a href="index.html#Appointment" class="contactbtn toggleContact" onclick="toggleConact();">Contact Us</a>
+                        </a>
+                </div>
+            </div>
+
+            <div class = "item">
+                <div class = "item-img">
+                    <img src = "images/11-0493_donjoy_iceman_CLEAR3_hires_2_580x.png">
+                    <div class = "icon-list">
+                        <a href="index.html#Appointment">
+                            </a>
+                    </div>
+                </div>
+                <div class = "item-detail">
+                    <a href = "index.html#Appointment" class = "item-name">Donjoy Ice Man</a>
+                    <div class = "item-price">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore fugiat quod corporis delectus sequi laudantium molestias vero distinctio, qui numquam dolore, corrupti, enim consectetur cum?</p>
+
+                    </div>
+                    <a href="index.html#Appointment">
+                        <a href="index.html#Appointment" class="contactbtn toggleContact" onclick="toggleConact();">Contact Us</a>
+                        </a>
+                </div>
+            </div>
+  
+            
+            
+        </div>
+  
+    </div>
+  </section>
+  
+  
+  
+  <script src = "random project/js/script.js"></script>
+<!--End Mobility Products-->  
+
+<!--Footer-->
+
+<section class="footer-container">
+  <div class="footer">
+      <div class="footer-heading footer-1">
+          <h2>Quick links</h2>
+          <a href="index.html">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#Accreditation">Accreditation</a>
+          <a href="#Product-label">Popular Products</a>
+          <a href="random_project.html">All Products</a>
+          <a href="#Appointment">Book An Appoitnment</a>
+      </div>
+      <div class="footer-heading footer-2">
+          <h2>Contact Us</h2>
+          <a href="tel: 630-953-9160">Phone: 630-953-9160</a>
+          <a href="tel: 630-953-9165" >Fax: 630-953-9165</a>
+          <a href="https://www.instagram.com/ebxd.k/">Website made by: Ebad Khan.</a>
+      </div>
+
+      
+              
+                
+            
+            
+            
+            
+            
+            
+                </div>
+            
+            
+              </div>
+            
+             
+            
+            </div>
+      </div>
+     
+</section>
+
+
+
+<!--End Footer-->
+  
+  
+  
+  
+  
+    </body>
+  
+  
+  </html>
+  

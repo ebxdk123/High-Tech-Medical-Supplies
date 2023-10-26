@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!-- Website - www.codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Slider HTML CSS JavaScript | codingNepal</title>
+
+
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="random project/css/swiper-bundle.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="random project/css/style.css" />
+  </head>
+  <body>
+
+    <div id="header">
+      <div class="container">
+
+<!--Navigation-->
+
+<header class="row ">
+    <nav>
+        <div class="wrapper">
+          <div class="logo"><a href="index.html"><span>H</span>igh <span>T</span>ech <span>M</span>edical <span>S</span>upplies</a></div>
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
+          <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About us</a></li>
+            <li>
+              <a href="index.html#service" class="desktop-item">Services</a>
+              <input type="checkbox" id="showDrop">
+              <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+              
+            </li>
+            <li>
+              <a href="random_project.html" class="desktop-item">All Products</a>
+              <input type="checkbox" id="showMega">
+              <label for="showMega" class="mobile-item">Mega Menu</label>
+              <div class="mega-box">
+                <div class="content">
+                  
+                  <div class="mega-row">
+                    <header>Mobility</header>
+                    <ul class="mega-links">
+                      <li><a href="Mobility_Products.html">Wheelchairs</a></li>
+                      <li><a href="Mobility_Products.html">Knee Scooters</a></li>
+                      <li><a href="Mobility_Products.html">Walkers</a></li>
+                      <li><a href="Mobility_Products.html">Transport Chairs</a></li>
+                      <li><a href="Mobility_Products.html">Rollator</a></li>
+                      <li><a href="Mobility_Products.html">Crutches</a></li>
+                      <li><a href="Mobility_Products.html">Canes</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-row">
+                    <header>Bathroom Safety</header>
+                    <ul class="mega-links">
+                      <li><a href="Bathroom_Safety.html">Shower Chairs</a></li>
+                      <li><a href="Bathroom_Safety.html">Tub Transfer Bench</a></li>
+                      <li><a href="Bathroom_Safety.html">Raised Toilet Seat</a></li>
+                      <li><a href="Bathroom_Safety.html">Toilet Safety Rails</a></li>
+                      <li><a href="Bathroom_Safety.html">Handheld Shower</a></li>
+                     
+                    </ul>
+                  </div>
+                  <div class="mega-row">
+                    <header>Post Surgery</header>
+                    <ul class="mega-links">
+                      <li><a href="Post_surgery.html">Cold Therapies and Compression Unit</a></li>
+                      <li><a href="Post_surgery.html">Vascutherm</a></li>
+                      <li><a href="Post_surgery.html">NICE Unit</a></li>
+                      <li><a href="Post_surgery.html">Cold Therapy Units</a></li>
+                      <li><a href="Post_surgery.html">SCD machine for lymphedema compression</a></li>
+                      <li><a href="Post_surgery.html">Lift Chairs</a></li>
+                      <li><a href="Post_surgery.html">Donjoy Ice Man</a></li>
+
+                    </ul>
+                  </div>
+                  <div class="mega-row">
+                    <header>Orthotics</header>
+                    <ul class="mega-links">
+                      <li><a href="Orthotic.html">Knee brace</a></li>
+                      <li><a href="Orthotic.html">Post Opperation Knee Bracing</a></li>
+                      <li><a href="Orthotic.html">Lumbar back brace</a></li>
+                      <li><a href="Orthotic.html">Wrist bracing</a></li>
+                      <li><a href="Orthotic.html">Knee brace</a></li>
+                      <li><a href="Orthotic.html">Elbow bracing</a></li>
+                      <li><a href="Orthotic.html">CAM Boot</a></li>
+                      <li><a href="Orthotic.html">Shoulder Bracing-Ultra Slim</a></li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <div>
+                <a href="index.html#Appointment" class="page-btn active toggleContact" onclick="toggleConact();">Contact Us</a>
+    
+            </div>
+          </ul>
+          <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+        </div>
+      </nav>
+</header>
+<!--End-Navigation-->
+
+
+<!-----services-------->
+<div id="services" data-aos="fade-up">
+<div class="container" data-aos="fade-up">
+<h1 class="sub-title">Shop By Medical Equipment<br>Categories.</h1>
+<div class="services-list">
+
+    <div class="services-list-Mobility"> 
+        <i class="fa-solid fa-briefcase"></i>
+        <h2>Mobility</h2>
+        <p>Insert Information Here.</p>
+
+        <a href="Mobility_Products.html" class="mobility-btn active toggleContact" onclick="toggleConact();">View all mobility products</a>
+
+
+    </div>
+
+
+
+    <div class="services-list-Bathroom"> 
+    <i class="fa-solid fa-code"></i>
+    <h2>Bathroom Safety</h2>
+    <p>Insert Information Here</p>
+    <a href="Bathroom_Safety.html" class="mobility-btn active toggleContact" onclick="toggleConact();">View all bathroom safety products</a>
+
+
+    </div>
+
+    <div class="services-list-Surgery"> 
+    <i class="fa-solid fa-truck"></i>
+    <h2>Post Surgery</h2>
+    <p>Insert Information Here</p>
+    <a href="Post_surgery.html" class="mobility-btn active toggleContact" onclick="toggleConact();">View all post surgery products</a>
+
+    </div>
+
+    <div class="services-list-bone"> 
+        <i class="fa-solid fa-code"></i>
+        <h2>Orthotics</h2>
+        <p>Insert Information Here</p>
+        <a href="Orthotic.html" class="mobility-btn active toggleContact" onclick="toggleConact();">View all orthotic products</a>
+
+
+        </div>
+
+
+
+    
+
+    
+
+
+</div>
+
+    </div>
+</div>
+      
+    
+
+<!--End-Navigation-->
+
+
+  
+
+<!--Footer-->
+
+<section class="footer-container">
+  <div class="footer">
+      <div class="footer-heading footer-1">
+          <h2>Quick links</h2>
+          <a href="index.html">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#Accreditation">Accreditation</a>
+          <a href="#Product-label">Popular Products</a>
+          <a href="random_project.html">All Products</a>
+          <a href="#Appointment">Book An Appoitnment</a>
+      </div>
+      <div class="footer-heading footer-2">
+          <h2>Contact Us</h2>
+          <a href="tel: 630-953-9160">Phone: 630-953-9160</a>
+          <a href="tel: 630-953-9165" >Fax: 630-953-9165</a>
+          <a href="https://www.instagram.com/ebxd.k/">Website made by: Ebad Khan.</a>
+      </div>
+
+      
+              
+                
+            
+            
+            
+            
+            
+            
+                </div>
+            
+            
+              </div>
+            
+             
+            
+            </div>
+      </div>
+     
+</section>
+
+
+
+<!--End Footer-->
+
+
+
+
+  </body>
+
+
+</html>
